@@ -33,7 +33,7 @@ _You will configure security groups at the creation of launch templates but to s
 5. In Outbound rules - by default all traffic is allowed, which means no need to change anything.
 6. Click on - Create security group
 
-![Security-Group](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/Security%20Group.png)
+![Security-Group](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/Security%20Group.png)
 
 # Step 3:- Creating Launch Templates
 _In this project you are going to host web application through configure autoscaling groups and load balancer, so for the autoscaling groups you need to create templates of your web pages of the application using 'Launch templates'_
@@ -142,7 +142,7 @@ _In your web application there are three pages which are deploy into 3 different
     </html>
     EOL
 
-![Launch-Templates](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/Launch%20Templates.png)
+![Launch-Templates](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/Launch%20Templates.png)
 
 #### All 3 Launch templates are created
 # Step 4:- Create Auto Scaling Groups
@@ -226,7 +226,7 @@ _you are going to create 3 different types of the auto scaling groups Static-Bik
 
     _//After few seconds you can check your desired capacity instances are in running state_
 
-![Instances](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/All%20Instances.png)
+![Instances](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/All%20Instances.png)
 
 _//This ASG is Scheduled so you need to make Scheduled it_
     - Refresh Auto Scaling Groups
@@ -242,11 +242,11 @@ _//This ASG is Scheduled so you need to make Scheduled it_
         - Enter Specific start time - 2025/03/01 : 00:00 
         - Click on - Create
 
-![Scheduled](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/Scheduled-%20ASG%20-%20KTM.png)
+![Scheduled](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/Scheduled-%20ASG%20-%20KTM.png)
 
         _//KTM-ASG is successfully scheduled for the new year sale._
 
-![Auto-Scaling-Groups](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/ASG.png)
+![Auto-Scaling-Groups](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/ASG.png)
 
 _All three Auto Scaling groups are configuring successfully._
 # Step 5:- Create Target Groups
@@ -288,7 +288,7 @@ _After the creation of Auto Scaling groups you create load balancer but before t
 5. In register targets - Do not select instances because target is auto-scaling groups.
 6. Click on - Create target group
 
-![Target-Groups](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/Target%20Groups.png)
+![Target-Groups](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/Target%20Groups.png)
 
 ### Target groups are successfully created
 # Step 6:- Assign Target Groups With Auto Scaling Groups
@@ -299,18 +299,18 @@ _After the creation of Auto Scaling groups you create load balancer but before t
 4. click on - Application, Network or Gateway Load Balancer target groups
 5. Select- Bikewale-TG
 
-![Home=ASG+TG](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/Bikewale-TG%2BASG.png)
+![Home=ASG+TG](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/Bikewale-TG%2BASG.png)
 
 6. Click on - Update
 #### Bikewale Target group assigned with Bikewale auto-scaling group
 ##### Follow same process for BMW-ASG & KTM-ASG 
 ### BMW-ASG
 
-![BMW=ASG+TG](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/BMW-TG%2BASG.png)
+![BMW=ASG+TG](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/BMW-TG%2BASG.png)
 
 ### KTM-ASG
 
-![KTM=ASG+TG](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/KTM-TG%2BASG.png)
+![KTM=ASG+TG](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/KTM-TG%2BASG.png)
 
 #### Now you are ready to configure Load Balancer
 # Step 7:- Configure Application Load Balancer
@@ -331,7 +331,7 @@ _After create all those resources now you need to create an application load bal
 9. In listeners and routing - you have one default lister - HTTP:80 -- Forwards to - Bikewale-TG(It will be your home page)
 10. Click on - Create load balancer
 
-![Load-Balancer](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/Load%20Balancer.png)
+![Load-Balancer](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/Load%20Balancer.png)
 
 #### Application Load Balancer created successfully
 # Step 8:- Configure Listener Rules
@@ -365,7 +365,7 @@ _Bikewale listener is configured at the creation of load balancer so now you nee
 9. Give lisetner rule priority - 2
 10. Review and Create - check all details and click on - Create
 
-![Listener-rules](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/Listner%20Rules.png)
+![Listener-rules](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/Listner%20Rules.png)
 
 #### Listener rules configured successfully
 # Step 9:- Test Your Infrastructure
@@ -374,15 +374,15 @@ _After Configure all those things now you are ready to test your web application
 2. Copy DNS name of - Bikewale-LB (eg. bikewale-lb-xxxxxxxxxx.us.west-1b.elb.amazonaws.com)
 3. Open new tab - Paste Copied DNS name
 
-![Home-Page](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/Bikewale%20Output.png)
+![Home-Page](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/Bikewale%20Output.png)
 
 4. Enter path for BMW - (eg. bikewale-lb-xxxxxxxxxx.us.west-1b.elb.amazonaws.com/bmw/ )
 
-![BMW-Page](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/BMW%20Output.png)
+![BMW-Page](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/BMW%20Output.png)
 
 5. Enter path for KTM - (eg. bikewale-lb-xxxxxxxxxx.us.west-1b.elb.amazonaws.com/ktm/ )
 
-![KTM-Page](https://github.com/iam-avinash-jagtap/Web-Application_Hosting_using-ASG-LB/blob/master/Images/KTM%20%20Output.png)
+![KTM-Page](https://github.com/Apoorv888/Cloud-Infrastructure-Optimization/blob/main/Images/KTM%20%20Output.png)
 
 # Summary
 In this project, you Configured 3 Auto scaling groups and Application load balancer in that  An auto-scaling group for an application load balancer is the configuration to make a web app highly available, fault-tolerant, and scalable. Three auto-scaling groups- static, dynamic, and scheduled-are created in three availability zones each associated with specific launch templates having user-data scripts to accommodate different application pages (Bikewale, BMW, and KTM).
